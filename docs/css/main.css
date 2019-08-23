@@ -1911,6 +1911,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   position: relative;
   padding: 20px 40px;
 }
+.imgvisible {
+  visibility: hidden;
+  position: relative;
+  width: 0px;
+  z-index: -99999;
+}
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -1976,6 +1982,19 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
   #about .lead {
     font-size: 2.5rem;
+  }
+  .imghidden {
+    visibility: hidden;
+    position: relative;
+    width: 0px;
+    z-index: -99999;
+  }
+  .imgvisible {
+    visibility: visible;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-top: -30px;
   }
 }
 @media only screen and (max-width: 400px) {
