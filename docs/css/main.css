@@ -1862,6 +1862,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   text-align: center;
   border-bottom: solid 3px #398607;
 }
+.youngliving {
+  min-height: 100vh;
+}
 #about h3 {
   font-family: "montserrat-bold", sans-serif;
   font-size: 1.8rem;
