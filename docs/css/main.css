@@ -1774,6 +1774,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   #about .intro-points p {
     font-size: 2rem;
   }
+  #youngliving .intro-points p {
+    font-size: 2rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   #home {
@@ -1862,10 +1865,18 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   text-align: center;
   border-bottom: solid 3px #398607;
 }
+#youngliving {
+  position: relative;
+  padding: 4.2rem 0 8rem;
+  background-color: #FFFFFF;
+  min-height: 496px;
+  text-align: center;
+  border-top: solid 3px #398607;
+}
 .youngliving {
   min-height: 100vh;
 }
-#about h3 {
+#about h3, #youngliving h3 {
   font-family: "montserrat-bold", sans-serif;
   font-size: 1.8rem;
   line-height: 1.667;
@@ -1874,7 +1885,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   letter-spacing: .3rem;
   position: relative;
 }
-#about .about-line h3::before {
+#about .about-line h3::before, #youngliving .about-line h3::before {
   display: block;
   content: "";
   width: 3px;
@@ -1882,7 +1893,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background-color: rgba(149, 149, 149, 0.7);
   margin: 0 auto 2.4rem;
 }
-#about .lead {
+#about .lead, #youngliving .lead {
   font-family: "librebaskerville-bold", serif;
   font-size: 4rem;
   line-height: 1.8;
@@ -1890,10 +1901,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin-top: 6rem;
 }
 
-#about .about-btn {
+#about .about-btn, #youngliving .about-btn {
   margin: 4.8rem 0 0 0;
 }
-#about .about-btn .button {
+#about .about-btn .button, #youngliving .about-btn .button {
   border-top-color: #2e383f;
   border-right-color: #2e383f;
   border-bottom-color: #398607;
@@ -1926,13 +1937,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * about 
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
-  #about {
+  #about, #youngliving {
     min-height: 636px;
   }
-  #about .about-wrap {
+  #about .about-wrap, #youngliving .about-wrap {
     max-width: 800px;
   }
-  #about .lead {
+  #about .lead, #youngliving .lead {
     font-size: 3.8rem;
   }
   .modal-dialog {
@@ -1940,10 +1951,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 @media only screen and (max-width: 900px) {
-  #about .about-wrap {
+  #about .about-wrap, #youngliving .about-wrap {
     max-width: 720px;
   }
-  #about .lead {
+  #about .lead, #youngliving .lead {
     font-size: 3.6rem;
   }
   .modal-dialog {
@@ -1951,13 +1962,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 @media only screen and (max-width: 768px) {
-  #about h3 {
+  #about h3, #youngliving h3 {
     font-size: 1.7rem;
   }
-  #about .about-wrap {
+  #about .about-wrap, #youngliving .about-wrap {
     max-width: 600px;
   }
-  #about .lead {
+  #about .lead, #youngliving .lead {
     font-size: 3.1rem;
   }
   .modal-dialog {
@@ -1968,22 +1979,22 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 @media only screen and (max-width: 600px) {
-  #about {
+  #about, #youngliving {
     min-height: auto;
   }
-  #about .about-wrap {
+  #about .about-wrap, #youngliving .about-wrap {
     max-width: 500px;
   }
-  #about .lead {
+  #about .lead, #youngliving .lead {
     margin-top: 4.8rem;
     font-size: 2.8rem;
   }
 }
 @media only screen and (max-width: 500px) {
-  #about h3 {
+  #about h3, #youngliving h3 {
     font-size: 1.5rem;
   }
-  #about .lead {
+  #about .lead, #youngliving .lead {
     font-size: 2.5rem;
   }
   .imghidden {
@@ -2001,13 +2012,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 @media only screen and (max-width: 400px) {
-  #about {
+  #about, #youngliving {
     padding: 4.2rem 0 9.6rem;
   }
-  #about .about-wrap {
+  #about .about-wrap, #youngliving .about-wrap {
     max-width: 380px;
   }
-  #about .lead {
+  #about .lead, #youngliving .lead {
     font-size: 2.3rem;
   }
 }
@@ -2048,7 +2059,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: #2e383f;
 }
 
-#about .services-btn .button {
+#about .services-btn .button, #youngliving .services-btn .button {
   border-top-color: #2e383f;
   border-right-color: #2e383f;
   border-bottom-color: #398607;
@@ -2088,6 +2099,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin-bottom: 3rem;
 }
 
+.yl-img {
+  padding-bottom: 20px; padding-top: 0px; padding-right: 0px; padding-left: 0px
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * services
@@ -2095,6 +2110,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 @media only screen and (max-width: 1024px) {
   #services .services-list .service-item {
     padding: 0 40px;
+  }
+  .yl-img {
+    padding-bottom: 20px; padding-top: 0px; padding-right: 1.5px; padding-left: 1.5px
   }
 }
 @media only screen and (max-width: 900px) {
