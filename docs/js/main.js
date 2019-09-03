@@ -337,7 +337,6 @@
 		ssAlertBoxes();
 		ssAnimations();
 		ssIntroAnimation();		
-		ssAjaxChimp();
 		ssBackToTop();
 
 	})();
