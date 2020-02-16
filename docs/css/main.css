@@ -1936,6 +1936,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * responsive:
  * about 
  * ------------------------------------------------------------------- */
+.carouselimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70vh;
+}
+
 @media only screen and (max-width: 1024px) {
   #about, #youngliving {
     min-height: 636px;
@@ -2009,6 +2016,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     width: 100%;
     z-index: 1;
     margin-top: -30px;
+  }
+  .carouselimg {
+    height: 55vh;
   }
 }
 @media only screen and (max-width: 400px) {
