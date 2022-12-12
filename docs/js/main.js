@@ -21,6 +21,8 @@
 	var doc = document.documentElement;
 	doc.setAttribute('data-useragent', navigator.userAgent);
 
+	$('#copyright').text(new Date().getFullYear());
+
 	
 	/* Preloader 
 	 * -------------------------------------------------- */
@@ -343,3 +345,4 @@
  
 
 })(jQuery);
+
