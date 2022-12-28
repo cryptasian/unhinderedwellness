@@ -102,38 +102,6 @@
   	};
 
 
-  	/* Carousel
-	* ------------------------------------------------------ */
-	var ssOwlCarousel = function() {
-
-		$(".owl-carousel").owlCarousel({		
-	      nav: false,
-			loop: true,
-	    	margin: 50,
-	    	responsiveClass:true,
-	    	responsive: {
-	         0:{
-	            items:2,
-	            margin: 20
-	         },
-	         400:{
-	            items:3,
-	            margin: 30
-	         },
-	         600:{
-	            items:4,
-	            margin: 40
-	         },
-	         1000:{
-	            items:6            
-	         }
-	    	}
-		});
-
-	};
-  	
-
-
   	/* Menu on Scrolldown
 	 * ------------------------------------------------------ */
 	var ssMenuOnScrolldown = function() {
@@ -319,8 +287,6 @@
 			}
 		});
 	};	
-
-
   
   /* Initialize
 	* ------------------------------------------------------ */
@@ -331,7 +297,6 @@
 		ssMasonryFolio();
 		ssLightGallery();
 		ssFlexSlider();
-		ssOwlCarousel();
 		ssMenuOnScrolldown();
 		ssOffCanvas();
 		ssSmoothScroll();
